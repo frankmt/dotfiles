@@ -64,8 +64,8 @@ export PS1="${color_yellow}\h${color_foreground}:${color_green}\W${color_red}\$(
 
 # EC2 API Tools (brew install ec2-api-tools)
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
-export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
-export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
+export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem 2>/dev/null)"
+export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem 2>/dev/null)"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.2.2/jars"
 
 # Ruby Version Machine
