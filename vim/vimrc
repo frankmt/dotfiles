@@ -1,0 +1,45 @@
+" Start pathogen for managing plugins, etc.
+call pathogen#infect()
+
+" New vim
+set nocompatible
+
+" Show line numbers
+set number
+set hlsearch
+
+" Show $ at end of thing being changed
+set cpoptions+=$
+
+" Set the status line up and always show it, even if single window
+set stl=%f\ %m\ %r\ Line:\ %l/%L\ [%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]
+set laststatus=2
+
+" Filetype plugin tells matchit about pairs and probably more. Not sure about
+" indent.
+filetype plugin indent on
+
+" Syntax highlighting
+syntax enable
+
+" Color scheme
+set background=dark
+colorscheme solarized
+
+" Misc
+set wildmenu
+
+" Mouse support
+set mouse=a
+set term=xterm
+
+" System clipboard sharing
+set clipboard=unnamed
+
+" Soft tabs
+set expandtab
+
+" Command-T settings
+let g:CommandTMatchWindowReverse=1
+let g:CommandTMaxHeight=15
+
