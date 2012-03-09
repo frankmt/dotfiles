@@ -11,6 +11,9 @@ set shiftwidth=2
 set expandtab
 set smartindent
 
+" Don't automatically insert linebreaks in long lines
+set wrap linebreak textwidth=0
+
 " Show line numbers
 set number
 set hlsearch
@@ -18,8 +21,7 @@ set hlsearch
 " Show $ at end of thing being changed
 set cpoptions+=$
 
-" Set the status line up and always show it, even if single window
-"set stl=%f\ %m\ %r\ Line:\ %l/%L\ [%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]
+" Show status line even if single window
 set laststatus=2
 
 " Filetype plugin tells matchit about pairs and probably more. Not sure about
@@ -43,10 +45,12 @@ set term=screen-256color
 " System clipboard sharing
 set clipboard=unnamed
 
-" Soft tabs
-set expandtab
-
 " Command-T settings
 let g:CommandTMatchWindowReverse=1
 let g:CommandTMaxHeight=15
+
+" AUTOMATIC SAVING 
+au FocusLost * silent! wa   " FocusLost only works in GUI vim (and for CTRL-Z)
+" au WinLeave,TabLeave * silent! wa
+" set autowriteall   " on buffer switch
 
