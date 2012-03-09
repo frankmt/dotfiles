@@ -4,6 +4,13 @@ call pathogen#infect()
 " New vim
 set nocompatible
 
+"" Tabs and indenting
+set bs=2
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
+
 " Show line numbers
 set number
 set hlsearch
@@ -12,7 +19,7 @@ set hlsearch
 set cpoptions+=$
 
 " Set the status line up and always show it, even if single window
-set stl=%f\ %m\ %r\ Line:\ %l/%L\ [%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]
+"set stl=%f\ %m\ %r\ Line:\ %l/%L\ [%p%%]\ Col:\ %c\ Buf:\ #%n\ [%b][0x%B]
 set laststatus=2
 
 " Filetype plugin tells matchit about pairs and probably more. Not sure about
@@ -22,7 +29,7 @@ filetype plugin indent on
 " Syntax highlighting
 syntax enable
 
-" Color scheme
+"" Color scheme
 set background=dark
 colorscheme solarized
 
@@ -31,7 +38,7 @@ set wildmenu
 
 " Mouse support
 set mouse=a
-set term=xterm
+set term=screen-256color
 
 " System clipboard sharing
 set clipboard=unnamed
