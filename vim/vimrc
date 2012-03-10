@@ -36,6 +36,7 @@ set background=dark
 colorscheme solarized
 
 " Misc
+set wildmode=longest,list,full
 set wildmenu
 
 " Mouse support
