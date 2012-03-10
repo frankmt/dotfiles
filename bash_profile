@@ -22,8 +22,11 @@ export PATH="/usr/local/bin:$PATH:~/bin"
 alias op="open *.tmproj || mate ."
 
 # TextMate
-export EDITOR="mate -w"
-alias op="open *.tmproj || mate ."
+# alias op="open *.tmproj || mate ."
+
+# vim
+export EDITOR="vim"
+alias v="vim"
 
 # autotest
 alias bat="bundle exec autotest --no-full-after-failed"
@@ -39,7 +42,7 @@ alias tmp="mkdir -p ~/tmp; cd ~/tmp"
 alias gst="git status"
 alias ga="git add"
 alias gc="git commit"
-alias gdm="git diff | mate"
+alias gdv="git diff | vim -"
 
 # brew & ruby(gems?)
 export RUBYLIB="`brew --prefix`/lib:$RUBYLIB"

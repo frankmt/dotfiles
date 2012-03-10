@@ -40,6 +40,9 @@ set wildmenu
 
 " Mouse support
 set mouse=a
+set ttymouse=xterm2   " Allows mouse dragging
+
+" Term settings
 set term=screen-256color
 
 " System clipboard sharing
