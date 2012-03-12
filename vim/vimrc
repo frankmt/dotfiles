@@ -4,6 +4,9 @@ call pathogen#infect()
 " New vim
 set nocompatible
 
+" Allow hiding edited bufferes
+set hidden
+
 "" Tabs and indenting
 set bs=2
 set tabstop=2
