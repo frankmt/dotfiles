@@ -2,6 +2,7 @@ require 'rake'
 
 desc "link home directory dot files into repo"
 task :install do
+  system "git submodule init && git submodule update"
   replace_all = false
   ignore = %w[Rakefile README.md]
   (Dir['*'] - ignore).each do |file|
