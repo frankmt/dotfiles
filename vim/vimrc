@@ -24,9 +24,10 @@ set cpoptions+=$
 " Show status line even if single window
 set laststatus=2
 
-" Filetype plugin tells matchit about pairs and probably more. Not sure about
-" indent.
-filetype plugin indent on
+" Filetype plugin tells matchit about pairs and probably more.
+filetype on
+filetype indent on
+filetype plugin on
 
 " Syntax highlighting
 syntax enable
@@ -44,17 +45,23 @@ set mouse=a
 set ttymouse=xterm2   " Allows mouse dragging
 
 " Term settings
-set term=screen-256color
+set term=xterm-256color
 
 " System clipboard sharing
 set clipboard=unnamed
-
-" Command-T settings
-let g:CommandTMatchWindowReverse=1
-let g:CommandTMaxHeight=15
 
 " AUTOMATIC SAVING 
 au FocusLost * silent! wa   " FocusLost only works in GUI vim (and for CTRL-Z)
 " au WinLeave,TabLeave * silent! wa
 " set autowriteall   " on buffer switch
+
+" Command-T settings
+let g:CommandTMatchWindowReverse=1
+let g:CommandTMaxHeight=15
+
+" NERDTree settings
+let g:NERDTreeChDirMode=2
+
+" Keyboard mappings
+map <Leader>nt :NERDTree<CR>
 
