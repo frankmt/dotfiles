@@ -53,6 +53,10 @@ set term=xterm-256color
 " System clipboard sharing
 set clipboard=unnamed
 
+" Reselect visual area when changing indent in visual mode (from @notahat)
+vnoremap < <gv
+vnoremap > >gv
+
 " AUTOMATIC SAVING 
 au FocusLost * silent! wa   " FocusLost only works in GUI vim (and for CTRL-Z)
 " au WinLeave,TabLeave * silent! wa
