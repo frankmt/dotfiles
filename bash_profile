@@ -43,6 +43,7 @@ alias gst="git status"
 alias ga="git add"
 alias gc="git commit"
 alias gdv="git diff | vim -"
+alias gdcv="git diff --cached | vim -"
 
 # brew & ruby(gems?)
 export RUBYLIB="`brew --prefix`/lib:$RUBYLIB"
