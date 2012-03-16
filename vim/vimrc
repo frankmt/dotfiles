@@ -65,6 +65,7 @@ au FocusLost * silent! wa   " FocusLost only works in GUI vim (and for CTRL-Z)
 " Command-T settings
 let g:CommandTMatchWindowReverse=1
 let g:CommandTMaxHeight=15
+map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
 
 " NERDTree settings
 let g:NERDTreeChDirMode=2
