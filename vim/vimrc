@@ -17,6 +17,9 @@ set smartindent
 " Don't automatically insert linebreaks in long lines
 set wrap linebreak textwidth=0
 
+" Don't automatically show long lines wrapped
+set nowrap
+
 " Show line numbers
 set number
 set hlsearch
