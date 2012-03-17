@@ -1,0 +1,9 @@
+[user]
+	name = Chris Berkhout
+	email = chrisberkhout@gmail.com
+[core]
+  # autocrlf = input
+[merge]
+	tool = vimdiff
+[color]
+	diff = auto
