@@ -71,5 +71,5 @@ map <leader>t :CommandTFlush<cr>\|:CommandT<cr>
 let g:NERDTreeChDirMode=2
 
 " Keyboard mappings
-map <Leader>nt :NERDTree<CR>
+map <Leader>n :NERDTree<CR>
 
