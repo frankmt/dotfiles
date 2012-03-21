@@ -22,3 +22,6 @@
 [submodule "vim/bundle/ZoomWin"]
 	path = vim/bundle/ZoomWin
 	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule "vim/bundle/kwbdi"]
+	path = vim/bundle/kwbdi
+	url = https://github.com/vim-scripts/kwbdi.vim.git
