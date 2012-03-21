@@ -2,6 +2,11 @@
 
 --sort-files
 
+# Custom types
+--type-set
+log=.log
+--nolog
+
 # Built-in types - usually disabled
 
 # --binary
