@@ -42,8 +42,8 @@ alias tmp="mkdir -p ~/tmp; cd ~/tmp"
 alias gst="git status"
 alias ga="git add"
 alias gc="git commit"
-alias gdv="git diff | vim -"
-alias gdcv="git diff --cached | vim -"
+alias gdv="git diff | view -"
+alias gdcv="git diff --cached | view -"
 
 # brew & ruby(gems?)
 export RUBYLIB="`brew --prefix`/lib:$RUBYLIB"
