@@ -56,6 +56,9 @@ set term=xterm-256color
 " System clipboard sharing
 set clipboard=unnamed
 
+" Leader and friends
+map , \
+
 " Reselect visual area when changing indent in visual mode (from @notahat)
 vnoremap < <gv
 vnoremap > >gv
