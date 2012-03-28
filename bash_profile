@@ -24,6 +24,10 @@ alias op="open *.tmproj || mate ."
 # TextMate
 # alias op="open *.tmproj || mate ."
 
+# let more key combos get through iterm to vim, etc.
+# http://groups.google.com/group/iterm2-discuss/browse_thread/thread/47700851d59386fb?pli=1
+stty -ixon
+
 # vim
 export EDITOR="vim"
 alias v="vim"
