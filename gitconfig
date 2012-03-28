@@ -1,9 +1,10 @@
 [user]
-	name = Chris Berkhout
-	email = chrisberkhout@gmail.com
+	name = Francisco Trindade 
+	email = frank.trindade@gmail.com 
 [core]
   # autocrlf = input
 [merge]
 	tool = vimdiff
 [color]
 	diff = auto
+	ui = auto
