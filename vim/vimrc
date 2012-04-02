@@ -1,3 +1,9 @@
+" Filetype plugin tells matchit about pairs and probably more.
+" This didn't work until I moved it before Pathogen.
+filetype on
+filetype indent on
+filetype plugin on
+
 " Start pathogen for managing plugins, etc.
 call pathogen#infect()
 
@@ -30,11 +36,6 @@ set cpoptions+=$
 " Show status line even if single window
 set laststatus=2
 
-" Filetype plugin tells matchit about pairs and probably more.
-filetype on
-filetype indent on
-filetype plugin on
-
 " Syntax highlighting
 syntax enable
 
@@ -55,6 +56,9 @@ set term=xterm-256color
 
 " System clipboard sharing
 set clipboard=unnamed
+
+" Leader and friends
+map , \
 
 " Reselect visual area when changing indent in visual mode (from @notahat)
 vnoremap < <gv

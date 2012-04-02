@@ -25,3 +25,15 @@
 [submodule "vim/bundle/kwbdi"]
 	path = vim/bundle/kwbdi
 	url = https://github.com/vim-scripts/kwbdi.vim.git
+[submodule "vim/bundle/ack"]
+	path = vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/bundle/greplace"]
+	path = vim/bundle/greplace
+	url = https://github.com/vim-scripts/greplace.vim.git
+[submodule "vim/bundle/vim-ruby"]
+	path = vim/bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/bundle/vim-matchit"]
+	path = vim/bundle/vim-matchit
+	url = https://github.com/tsaleh/vim-matchit.git

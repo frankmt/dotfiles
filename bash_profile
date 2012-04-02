@@ -24,6 +24,10 @@ alias op="open *.tmproj || mate ."
 # TextMate
 # alias op="open *.tmproj || mate ."
 
+# let more key combos get through iterm to vim, etc.
+# http://groups.google.com/group/iterm2-discuss/browse_thread/thread/47700851d59386fb?pli=1
+stty -ixon
+
 # vim
 export EDITOR="vim"
 alias v="vim"
@@ -42,8 +46,8 @@ alias tmp="mkdir -p ~/tmp; cd ~/tmp"
 alias gst="git status"
 alias ga="git add"
 alias gc="git commit"
-alias gdv="git diff | vim -"
-alias gdcv="git diff --cached | vim -"
+alias gdv="git diff | view -"
+alias gdcv="git diff --cached | view -"
 
 # brew & ruby(gems?)
 export RUBYLIB="`brew --prefix`/lib:$RUBYLIB"
